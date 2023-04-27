@@ -7,7 +7,7 @@ import propTypes from 'prop-types';
 export class Render extends Component {
   constructor(props) {
     super(props);
-    this.url = 'https://90.150.87.78:7070';
+    this.url = 'http://90.150.87.78:7070';
     this.state = ([]);
   }
   
