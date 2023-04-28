@@ -29,8 +29,9 @@ export class Render extends Component {
   async hendeleAdd(text) {
     const data = {
       method: 'POST',
-      body: text
-    }
+      body: text ? JSON.stringify({ text }) : null
+    }    
+    
     await fetch(this.url, data);
     this.getData(this.url);
   }
